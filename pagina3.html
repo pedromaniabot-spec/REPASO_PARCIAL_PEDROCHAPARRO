@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+    <link rel="stylesheet" href="static/estilos.css">
+</head>
+<body class="pagina3">
+
+    <header>
+        <h1>Mi Blog Personal</h1>
+        <nav>
+            <a href="index.html" class="nav-btn3">Inicio</a>
+            <a href="pagina1.html" class="nav-btn3">Página 1</a>
+            <a href="pagina2.html" class="nav-btn3">Página 2</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Mis gustos personales</h2>
+
+            <table class="blog-tabla">
+                <tr>
+                    <th>Ciudades favoritas</th>
+                    <th>Clubs favoritos</th>
+                    <th>Comidas favoritas</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>Me encantan lugares llenos de historia y paisajes hermosos, como París, Tokio y Buenos Aires.</p>
+                        <a href="https://www.lonelyplanet.com/" target="_blank" class="leer-mas">Leer más</a>
+                    </td>
+                    <td>
+                        <p>Mis equipos favoritos son el FC Barcelona, River Plate y Manchester City, por su estilo de juego.</p>
+                        <a href="https://www.espn.com/" target="_blank" class="leer-mas">Leer más</a>
+                    </td>
+                    <td>
+                        <p>Disfruto de la pizza italiana, el sushi japonés y las empanadas argentinas.</p>
+                        <a href="https://www.recetasgratis.net/" target="_blank" class="leer-mas">Leer más</a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Creado por <strong>Piter</strong> | <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        // Mostrar fecha actual automáticamente
+        const fecha = new Date();
+        const opciones = { day: 'numeric', month: 'long', year: 'numeric' };
+        document.getElementById('fecha').textContent = fecha.toLocaleDateString('es-ES', opciones);
+    </script>
+
+</body>
+</html>
 
