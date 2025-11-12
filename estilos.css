@@ -274,6 +274,39 @@ footer {
     100% { transform: translateY(0) scale(1); opacity: 1; }
 }
 
+/* ==== ESTILO ESPECIAL DE BOTONES DE NAVEGACIÓN PARA PÁGINA 2 ==== */
+.pagina2 nav {
+    margin-top: 10px;
+}
+
+.pagina2 nav a.nav-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent;
+}
+
+.pagina2 nav a.nav-btn:hover {
+    background: white;
+    color: #0072ff;
+    border-color: #0072ff;
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 114, 255, 0.3);
+}
+
+.pagina2 nav a.nav-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 114, 255, 0.4);
+}
+
 
 
 
