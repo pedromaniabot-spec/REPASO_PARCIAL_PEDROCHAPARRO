@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <link rel="stylesheet" href="static/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Galería de Imágenes</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="pagina1.html">Página 1</a>
+            <a href="pagina3.html">Página 3</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Mis Imágenes Favoritas</h2>
+            <div class="galeria">
+
+                <div class="imagen anim1">
+                    <img src="https://picsum.photos/400/250?random=1" alt="Naturaleza">
+                    <div class="info">
+                        <h3>Naturaleza</h3>
+                        <p>Un paisaje natural que transmite tranquilidad y armonía.</p>
+                    </div>
+                </div>
+
+                <div class="imagen anim2">
+                    <img src="https://picsum.photos/400/250?random=2" alt="Ciudad moderna">
+                    <div class="info">
+                        <h3>Ciudad moderna</h3>
+                        <p>Una vista urbana llena de luces, energía y movimiento.</p>
+                    </div>
+                </div>
+
+                <div class="imagen anim3">
+                    <img src="https://picsum.photos/400/250?random=3" alt="Tecnología">
+                    <div class="info">
+                        <h3>Tecnología</h3>
+                        <p>Innovación digital y avances que transforman nuestro mundo.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Creado por <strong>Piter</strong> | <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        // Mostrar fecha actual automáticamente
+        const fecha = new Date();
+        const opciones = { day: 'numeric', month: 'long
 
