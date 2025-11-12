@@ -10,26 +10,39 @@
 
     <header>
         <h1>Bienvenido a mi página web</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="pagina1.html">PAGINA 1</a>
-            <a href="pagina2.html">PAGINA 2</a>
-        </nav>
     </header>
 
     <main>
         <section>
-            <h2>Sección principal</h2>
-            <p>Este es un párrafo de ejemplo. Aquí puedes escribir cualquier contenido.</p>
+            <h2>Explora mis páginas</h2>
+            <p>A continuación encontrarás tres secciones con diferentes contenidos:</p>
+
+            <div class="botones">
+                <a href="pagina1.html" class="btn btn1">Página 1</a>
+                <a href="pagina2.html" class="btn btn2">Página 2</a>
+            </div>
         </section>
 
         <article>
-            <h3>Artículo destacado</h3>
-            <p>Este es un artículo de muestra con texto de ejemplo para ver el estilo.</p>
+            <h3>Contenido de las páginas</h3>
+            <ul>
+                <li><strong>Página 1:</strong> Contiene información general o ejemplos de estructura HTML básica.</li>
+                <li><strong>Página 2:</strong> Muestra una pequeña galería de imágenes o lista de empleados con fotos.</li>
+            </ul>
         </article>
     </main>
 
+    <footer>
+        <p>Creado por <strong>Piter</strong> | <span id="fecha"></span></p>
+    </footer>
 
+    <script>
+        // Mostrar la fecha actual automáticamente
+        const fecha = new Date();
+        const opciones = { day: 'numeric', month: 'long', year: 'numeric' };
+        document.getElementById('fecha').textContent = fecha.toLocaleDateString('es-ES', opciones);
+    </script>
 
 </body>
 </html>
+
