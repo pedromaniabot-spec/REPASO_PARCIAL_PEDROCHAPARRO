@@ -102,6 +102,86 @@ footer {
     100% { transform: translateY(0); }
 }
 
+/* ==== TABLA DE CARRERA ==== */
+.tabla-carrera {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabla-carrera th, .tabla-carrera td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-carrera th {
+    background-color: #0078d7;
+    color: white;
+}
+
+.tabla-carrera tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* ==== REDES SOCIALES ==== */
+.redes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.icono {
+    display: inline-block;
+    font-size: 24px;
+    color: white;
+    background-color: #0078d7;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.icono:hover {
+    transform: scale(1.2);
+}
+
+/* Colores individuales en hover */
+.facebook:hover {
+    background-color: #1877f2;
+}
+.instagram:hover {
+    background-color: #e4405f;
+}
+.linkedin:hover {
+    background-color: #0a66c2;
+}
+
+/* ==== BOTÓN DE CV ==== */
+.cv-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    width: fit-content;
+}
+
+.cv-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
 
 
 
