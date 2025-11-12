@@ -72,5 +72,22 @@
 /* rebotar: pequeño desplazamiento vertical + escala */
 @keyframes rebotar {
     0%   { transform: translateY(40px) scale(0.95); opacity: 0; }
-    60%  { transfor
+    60%  { transform: translateY(-8px) scale(1.03); opacity: 1; }
+    80%  { transform: translateY(3px) scale(0.995); }
+    100% { transform: translateY(0) scale(1); }
+}
+
+/* latir: pulso suave y repetitivo (no afecta a hover) */
+@keyframes latir {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.03); }
+    100% { transform: scale(1); }
+}
+
+/* subir-fade: sube mientras aparece */
+@keyframes subir-fade {
+    0%   { transform: translateY(30px) scale(0.98); opacity: 0; }
+    100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+
 
