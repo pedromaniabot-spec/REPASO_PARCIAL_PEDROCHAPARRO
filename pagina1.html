@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1 - Información General</title>
+    <link rel="stylesheet" href="static/estilos.css">
+</head>
+<body>
 
+    <header>
+        <h1>Página 1 - Información General</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="pagina2.html">Página 2</a>
+            <a href="pagina3.html">Página 3</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Acerca del sitio</h2>
+            <p>Esta página contiene información general de ejemplo. Su objetivo es mostrar cómo se estructuran los contenidos en HTML con encabezados, párrafos y listas.</p>
+        </section>
+
+        <article>
+            <h3>Datos interesantes</h3>
+            <ul>
+                <li>HTML significa <strong>HyperText Markup Language</strong>.</li>
+                <li>CSS permite dar estilo y color a las páginas web.</li>
+                <li>El navegador interpreta ambos para mostrar una interfaz atractiva.</li>
+            </ul>
+        </article>
+    </main>
+
+    <footer>
+        <p>Creado por <strong>Piter</strong> | <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        const fecha = new Date();
+        const opciones = { day: 'numeric', month: 'long', year: 'numeric' };
+        document.getElementById('fecha').textContent = fecha.toLocaleDateString('es-ES', opciones);
+    </script>
+
+</body>
+</html>
+ 
