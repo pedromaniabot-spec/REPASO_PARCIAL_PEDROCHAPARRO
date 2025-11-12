@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 1 - Información General</title>
+    <title>Perfil Profesional</title>
     <link rel="stylesheet" href="static/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
     <header>
-        <h1>Página 1 - Información General</h1>
+        <h1>Mi Perfil Profesional</h1>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="pagina2.html">Página 2</a>
@@ -19,18 +20,62 @@
 
     <main>
         <section>
-            <h2>Acerca del sitio</h2>
-            <p>Esta página contiene información general de ejemplo. Su objetivo es mostrar cómo se estructuran los contenidos en HTML con encabezados, párrafos y listas.</p>
+            <h2>Sobre mí</h2>
+            <p>Soy un profesional dedicado y apasionado por la tecnología y el desarrollo web. 
+               Me gusta aprender constantemente nuevas herramientas, crear soluciones prácticas 
+               y ayudar a otros a mejorar sus conocimientos. Tengo experiencia en HTML, CSS, 
+               JavaScript y diseño de interfaces modernas.</p>
         </section>
 
-        <article>
-            <h3>Datos interesantes</h3>
-            <ul>
-                <li>HTML significa <strong>HyperText Markup Language</strong>.</li>
-                <li>CSS permite dar estilo y color a las páginas web.</li>
-                <li>El navegador interpreta ambos para mostrar una interfaz atractiva.</li>
-            </ul>
-        </article>
+        <section>
+            <h2>Formación y Experiencia</h2>
+            <table class="tabla-carrera">
+                <thead>
+                    <tr>
+                        <th>Año</th>
+                        <th>Institución / Empresa</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2018</td>
+                        <td>Colegio Nacional</td>
+                        <td>Graduado en Ciencias Básicas</td>
+                    </tr>
+                    <tr>
+                        <td>2019 - 2021</td>
+                        <td>Universidad Tecnológica</td>
+                        <td>Estudios en Desarrollo de Software</td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>Empresa ABC</td>
+                        <td>Práctica profesional en soporte técnico</td>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>Freelancer</td>
+                        <td>Desarrollo de sitios web y mantenimiento</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td>Empresa XYZ</td>
+                        <td>Diseñador web front-end</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Contáctame</h2>
+            <div class="redes">
+                <a href="https://facebook.com" target="_blank" class="icono facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" class="icono instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="icono linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="cv.pdf" target="_blank" class="cv-btn">📄 Ver mi Currículum</a>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -38,6 +83,7 @@
     </footer>
 
     <script>
+        // Mostrar la fecha actual automáticamente
         const fecha = new Date();
         const opciones = { day: 'numeric', month: 'long', year: 'numeric' };
         document.getElementById('fecha').textContent = fecha.toLocaleDateString('es-ES', opciones);
@@ -45,4 +91,5 @@
 
 </body>
 </html>
+
  
